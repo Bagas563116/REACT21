@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/REACT21/static/js/main.6cbb6b7c.js",
+    "static/media/bg.png": "/REACT21/static/media/bg.a5a519da1288cefacf4e.png",
+    "static/media/kolase1.png": "/REACT21/static/media/kolase1.a5a519da1288cefacf4e.png",
+    "static/media/kolase2.png": "/REACT21/static/media/kolase2.a5a519da1288cefacf4e.png",
+    "static/media/kolase3.png": "/REACT21/static/media/kolase3.a5a519da1288cefacf4e.png",
+    "static/media/kolase4.png": "/REACT21/static/media/kolase4.a5a519da1288cefacf4e.png",
+    "static/media/kolase5.png": "/REACT21/static/media/kolase5.a5a519da1288cefacf4e.png",
+    "static/media/kolase6.png": "/REACT21/static/media/kolase6.a5a519da1288cefacf4e.png",
+    "index.html": "/REACT21/index.html",
+    "main.6cbb6b7c.js.map": "/REACT21/static/js/main.6cbb6b7c.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.6cbb6b7c.js"
+  ]
+}
