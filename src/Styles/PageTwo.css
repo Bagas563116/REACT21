@@ -1,0 +1,177 @@
+.pagetwo-container {
+  width: 100vw;
+  height: 100vh;
+  background:
+    radial-gradient(
+      circle 130px at var(--x) var(--y),
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.96) 100%
+    ),
+    url("../Assets/bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.05s linear;
+}
+
+/* ================= POPUP ================= */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.popup-box {
+  background: rgba(15, 15, 25, 0.7);
+  border-radius: 16px;
+  padding: 20px 22px;
+  width: 420px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+  animation: popupIn 0.6s ease;
+}
+
+@keyframes popupIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ================= PROFILE ================= */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.profile img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid #555;
+}
+
+.profile span {
+  font-weight: 600;
+  color: #a4bfff;
+  letter-spacing: 0.5px;
+}
+
+/* ================= MESSAGE ================= */
+.message-box {
+  color: rgb(182, 189, 196);
+  background: rgba(30, 30, 45, 1);
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+  min-height: 70px;
+}
+
+/* ================= NAV ================= */
+.nav-btns {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btns button,
+.input-box button {
+  background: #141428;
+  border: 1px solid #3a3a5a;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btns button:hover,
+.input-box button:hover {
+  background: #1f1f3a;
+}
+
+.nav-btns button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ================= INPUT ================= */
+.input-box {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.input-box input {
+  flex: 1;
+  background: #0e0e18;
+  border: 1px solid #333;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* ================= FINAL HINT ================= */
+.final-hint {
+  position: absolute;
+  top: 22%;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.85);
+  animation: pulse 1.5s infinite;
+  z-index: 2;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+}
+
+/* ================= HIDDEN BUTTON ================= */
+.hidden-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+  padding: 14px 18px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: 0.4s;
+  backdrop-filter: blur(6px);
+}
+
+.hidden-btn.reveal {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1.15);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}

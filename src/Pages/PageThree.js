@@ -1,29 +1,47 @@
-import FotoFoto from "../Components/FotoFoto";
-import img1 from "../Assets/kolase1.png";
-import img2 from "../Assets/kolase2.png";
-import img3 from "../Assets/kolase3.png";
-import img4 from "../Assets/kolase4.png";
-import img5 from "../Assets/kolase5.png";
-import img6 from "../Assets/kolase6.png";
+import { useState } from "react";
+import "../Styles/PageThree.css";
+import kaget from "../Assets/jumpscare.jpeg";
 
 export default function PageThree() {
-  const images = [img1, img2, img3, img4, img5, img6];
+  const [showPopup, setShowPopup] = useState(true);
+  const [showJumpscare, setShowJumpscare] = useState(false);
+
+  const handleOk = () => {
+    setShowPopup(false);
+
+    // delay kecil biar dramatis
+    setTimeout(() => {
+      setShowJumpscare(true);
+    }, 300);
+  };
 
   return (
-    <div
-      style={{
-        height: "100vh",
-        background: "#111",
-        display: "flex",
-        flexWrap: "wrap",
-        gap: 20,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      {images.map((img, i) => (
-        <FotoFoto key={i} src={img} />
-      ))}
+    <div className="pagethree-container">
+      {/* VIRUS POPUP */}
+      {showPopup && (
+        <div className="virus-overlay">
+          <div className="virus-popup">
+            <div className="virus-title">⚠ WARNING</div>
+            <div className="virus-text">
+              Perangkat anda terkena virus.
+              <br />
+              Klik OK untuk menghapus virus pada perangkat anda
+              <br />
+              dikarenakan membuka situs ilegal.
+            </div>
+            <button className="virus-btn" onClick={handleOk}>
+              OK
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* JUMPSCARE */}
+      {showJumpscare && (
+        <div className="jumpscare-overlay">
+          <img src={kaget} alt="jumpscare" />
+        </div>
+      )}
     </div>
   );
 }
