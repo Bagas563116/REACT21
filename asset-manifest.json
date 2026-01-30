@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.js": "/REACT21/static/js/main.6cbb6b7c.js",
-    "static/media/bg.png": "/REACT21/static/media/bg.a5a519da1288cefacf4e.png",
-    "static/media/kolase1.png": "/REACT21/static/media/kolase1.a5a519da1288cefacf4e.png",
-    "static/media/kolase2.png": "/REACT21/static/media/kolase2.a5a519da1288cefacf4e.png",
-    "static/media/kolase3.png": "/REACT21/static/media/kolase3.a5a519da1288cefacf4e.png",
-    "static/media/kolase4.png": "/REACT21/static/media/kolase4.a5a519da1288cefacf4e.png",
-    "static/media/kolase5.png": "/REACT21/static/media/kolase5.a5a519da1288cefacf4e.png",
-    "static/media/kolase6.png": "/REACT21/static/media/kolase6.a5a519da1288cefacf4e.png",
+    "main.css": "/REACT21/static/css/main.8ec75ea7.css",
+    "main.js": "/REACT21/static/js/main.f9ce33d0.js",
+    "static/media/music.mp3": "/REACT21/static/media/music.458f66948de77d5a182a.mp3",
+    "static/media/judol.jpg": "/REACT21/static/media/judol.ebe4465ea41cfba3fcdf.jpg",
+    "static/media/bg.jpeg": "/REACT21/static/media/bg.2fdf0cc188489fd5ba36.jpeg",
+    "static/media/jumpscare.jpeg": "/REACT21/static/media/jumpscare.21c7e81419bf98048468.jpeg",
+    "static/media/pp.png": "/REACT21/static/media/pp.7af87a7d76dcb46d75a3.png",
     "index.html": "/REACT21/index.html",
-    "main.6cbb6b7c.js.map": "/REACT21/static/js/main.6cbb6b7c.js.map"
+    "main.8ec75ea7.css.map": "/REACT21/static/css/main.8ec75ea7.css.map",
+    "main.f9ce33d0.js.map": "/REACT21/static/js/main.f9ce33d0.js.map"
   },
   "entrypoints": [
-    "static/js/main.6cbb6b7c.js"
+    "static/css/main.8ec75ea7.css",
+    "static/js/main.f9ce33d0.js"
   ]
 }
